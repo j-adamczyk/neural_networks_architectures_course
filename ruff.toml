@@ -1,0 +1,17 @@
+extend-exclude = [
+    # student notebooks are generated from the filled notebooks; they are
+    # exercise templates with "..." placeholders, and linting fixes (e.g.
+    # removing unused imports) would break them
+    "lab*/lab_[0-9].ipynb",
+]
+
+[lint]
+# explicit rules, so that ruff updates don't change what is checked:
+# default rules, import sorting (I) and Python syntax upgrades (UP)
+select = ["E4", "E7", "E9", "F", "I", "UP"]
+
+[lint.per-file-ignores]
+# common and fine in notebooks: imports in later cells, redefining functions
+# in later cells, unused variables like fig in "fig, ax = plt.subplots()",
+# short variable names like l in comprehensions
+"*.ipynb" = ["E402", "E741", "F811", "F841"]

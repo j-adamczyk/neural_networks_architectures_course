@@ -1,0 +1,23 @@
+[project]
+name = "neural-networks-architectures-lab1"
+version = "1.0.0"
+description = "Neural Network Architectures lab 1"
+authors = [{name = "Jakub Adamczyk", email = "jadamczy@agh.edu.pl"}]
+requires-python = "==3.12.*"
+
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pillow",
+    "scikit-learn>=1.6",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+]
+
+[dependency-groups]
+dev = [
+    # not exported to requirements.txt, it breaks Google Colab
+    "notebook",
+    "pre-commit",
+    "ruff",
+]

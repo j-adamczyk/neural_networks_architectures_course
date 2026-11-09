@@ -3,6 +3,7 @@
 ## Topics
 
 1. [Convolutional architectures](lab1)
+2. [Transformers](lab2)
 
 ## Environment setup
 

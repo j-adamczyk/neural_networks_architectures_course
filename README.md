@@ -4,6 +4,7 @@
 
 1. [Convolutional architectures](lab1)
 2. [Transformers](lab2)
+3. [Autoencoders](lab3)
 
 ## Environment setup
 

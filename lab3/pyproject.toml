@@ -1,0 +1,32 @@
+[project]
+name = "neural-networks-architectures-lab3"
+version = "1.0.0"
+description = "Neural Network Architectures lab 3"
+authors = [{name = "Jakub Adamczyk", email = "jadamczy@agh.edu.pl"}]
+requires-python = "==3.12.*"
+
+dependencies = [
+    "accelerate>=1.1",
+    "anndata>=0.13.4",
+    "datasets>=4",
+    "deepinv>=0.5.0",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pillow",
+    "scikit-learn>=1.6",
+    "scipy",
+    "timm>=1.0.31",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "transformers>=5.5",
+]
+
+[dependency-groups]
+dev = [
+    # not exported to requirements.txt, it breaks Google Colab
+    "ipywidgets",
+    "notebook",
+    "pre-commit",
+    "ruff",
+]
